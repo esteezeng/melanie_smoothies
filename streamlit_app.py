@@ -40,8 +40,8 @@ if ingredients_list:
 
     #st.write(ingredients_string)
 
-    my_insert_stmt = """ insert into smoothies.public.orders
-            values ('"""+name_on_order+"""', '"""+ ingredients_string +"""')"""
+    my_insert_stmt = """ insert into smoothies.public.orders (name_on_order, ingredients, order_filled)
+            values ('"""+name_on_order+"""', '"""+ ingredients_string +"""',false)"""
 
     #st.write(my_insert_stmt)
     #st.stop()
